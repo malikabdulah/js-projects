@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title 
+        style="text-align: center;
+        color: white;
+        ">Project 1</title>
+        <style>
+            span{
+                padding: 35px 50px;
+                border-radius: 8px;
+                border: 2px black solid;
+            }
+            p{
+                font-size: larger;
+            }
+        </style>
+    </head>
+    <body style="background-color: #212121; color: #fff;">
+        <div class="canvas" style="text-align: center;">
+            <br />
+            <h1>Choose Background Colour</h1>
+            <br />
+            <br />
+            <br />
+            <span class="button" id="grey" style="background-color: grey; color: #fff;"></span>
+            <span class="button" id="white" style="background-color: #fff;"></span>
+            <span class="button" id="yellow" style="background-color: yellow; color: black;"> </span>
+            <span class="button" id="blue" style="background-color: blue;"></span>
+            <span class="button" id="green" style="background-color: green;"></span>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <p> Select One of The Colours above to change the <strong>Background</strong> of the Page</p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <p style="font-size: medium;;">Made by: <strong>Malik Abdullah</strong></p>
+        </div>
+    </body>
+    <script>
+        const allButtons=document.querySelectorAll('.button')
+        allButtons.forEach((b)=>{
+            b.addEventListener('click',(e)=>{
+                if(e.target.id==="white")
+                {
+                    document.body.style.backgroundColor=e.target.id;
+                    document.body.style.color='black';
+
+                }
+                else if(e.target.id==="grey")
+                {
+                    document.body.style.backgroundColor=e.target.id;
+                    document.body.style.color='black';
+
+                }
+                else if(e.target.id==="yellow")
+                {
+                    document.body.style.backgroundColor=e.target.id;
+                    document.body.style.color='black';
+
+                }
+                else if(e.target.id==="green")
+                {
+                    document.body.style.backgroundColor=e.target.id;
+                    document.body.style.color='black';
+
+                }
+                else if(e.target.id==="blue")
+                {
+                    document.body.style.backgroundColor=e.target.id;
+                    document.body.style.color='white';
+
+                }
+                console.log(e.target)
+            })
+        })
+    </script>
+</html>
