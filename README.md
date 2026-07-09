@@ -21,7 +21,8 @@ An interactive utility that dynamically updates the webpage's background and tex
 * **Concepts Learned:** `querySelectorAll`, `forEach` loops, Event Listeners (`click`), and modifying inline CSS properties via the DOM (`element.style`).
 
 * **Preview:**
-  
+  <img width="720" height="586" alt="image" src="https://github.com/user-attachments/assets/11806a45-3fca-4d27-bf6d-fb97ef208510" />
+
 
 ### 2. BMI Calculator
 
@@ -30,7 +31,8 @@ A health tool that takes a user's height and weight, calculates their Body Mass 
 * **Concepts Learned:** Form handling, preventing default form submission (`e.preventDefault()`), input parsing and validation (`isNaN`), and injecting dynamic HTML (`innerHTML`).
 
 * **Preview:**
-  
+  <img width="605" height="440" alt="image" src="https://github.com/user-attachments/assets/732db975-484a-4f3e-8e2c-c5c96f8aefae" />
+
 
 ### 3. Local Time Clock
 
@@ -39,7 +41,8 @@ A digital clock that continuously fetches and displays the user's current system
 * **Concepts Learned:** The JavaScript `Date` object, `toLocaleTimeString()`, and asynchronous timing events using `setInterval()`.
 
 * **Preview:**
-  
+  <img width="820" height="557" alt="image" src="https://github.com/user-attachments/assets/bc0e635f-a459-41a9-a04b-06a5051e3161" />
+
 
 ### 4. Number Guessing Game
 
@@ -48,7 +51,8 @@ An interactive game where the player has 10 attempts to guess a randomly generat
 * **Concepts Learned:** Number generation (`Math.random`, `Math.floor`), advanced conditional logic (win/loss states), disabling/enabling input fields, and dynamically creating/appending new DOM elements (`createElement`, `appendChild`).
 
 * **Preview:**
-  
+  <img width="569" height="585" alt="image" src="https://github.com/user-attachments/assets/98e974b9-1e06-4179-86cc-af6dac0a7177" />
+
 
 ## 💻 How to Run Locally
 
