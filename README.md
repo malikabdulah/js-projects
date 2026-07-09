@@ -54,12 +54,8 @@ An interactive game where the player has 10 attempts to guess a randomly generat
 
 Since these projects are built with standard web technologies, there is no complex setup, installation, or local server required!
 
-1. Clone this repository to your local machine:
----
-git clone https://github.com/your-username/js-projects.git
----
+1. Clone this repository to your local machine
 2. Navigate into the project folder you want to view.
-
 3. Simply double-click the `.html` file (e.g., `bgColor.html`, `bmi_generator.html`) to open it in your default web browser.
 
 *Developed by **Malik Abdullah***
