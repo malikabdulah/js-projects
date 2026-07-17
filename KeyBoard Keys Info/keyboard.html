@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keys</title>
+</head>
+<body style="background-color: #414141; text-align: center;">
+   <h1>KeyBoard Key Info</h1>
+   <div id="insert">
+    <p>Press some key for its info</p>
+   </div>   
+</body>
+<script>
+    const insert=document.querySelector('#insert')
+    window.addEventListener('keydown',function(e){
+        insert.innerHTML=`<p><b>Key:</b> ${e.key}</p>
+        <p><b>KeyCode:</b> ${e.keyCode}</p>
+        <p><b>Code:</b> ${e.code}`;
+    })
+</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continous Bg Color Changer</title>
+    <style>
+        button{
+            border-radius: 8px;
+            width: 100px;
+            height: 40px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body style="background-color: #414141; text-align: center;">
+   <h1>Continuous Background Color Changer</h1>
+   <button id="start">Start</button> 
+   <button id="stop">Stop</button> 
+   <h2>Click <b>start</b> to change color every 0.5 seconds</h2>
+</body>
+<script>
+    
+    const randomColor=function(){
+        let hex="0123456789ABCDEF"
+        let color='#';
+        let num=0;
+        for(let i=0;i<6;i++)
+        {
+            num=Math.floor(Math.random()*16);
+            color+=hex[num];
+        }
+        return color;
+    }
+    function startChangingColor(){
+        document.body.style.backgroundColor=randomColor();
+    }
+    //declaring the variable for the interval
+    let intervalId=null;
+    console.log(intervalId)
+   
+    document.querySelector('#start').addEventListener('click',function(e){
+        if(intervalId===null)//check to avoid unneccessary clicking of start which results in unneccessary number of setIntervals taking place
+        {
+            intervalId=setInterval(startChangingColor,500);//clicking start assigns value to our Interval and it starts printing
+            console.log("Interval Started")
+        }
+        console.log("start clicked");//it will only appear when the start button is clicked because its not part of the interval
+    });
+
+    document.querySelector('#stop').addEventListener('click',function(e){
+        clearInterval(intervalId);//this clears the current value of interval, if there is no check for start being pressed more than once, the previous value of intervalId would change and it would make its previous values be kinda dangling and run infinitely
+        console.log("stop clicked");
+        e.stopPropagation();//this prevents the start function from running by default idk how its happening but this is it
+        intervalId=null;//we make it null for checks
+    });
+
+</script>
+</html>
